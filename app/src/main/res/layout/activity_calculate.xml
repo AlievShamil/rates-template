@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/charCodeTextView"
+        android:hint="Введите значение..."
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:paddingRight="@dimen/padding_large"
+        android:padding="@dimen/padding_large"
+        android:id="@+id/charCodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        tools:text="USD"/>
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputEditText"
+        android:layout_centerInParent="true"
+        android:text="="
+        android:textAppearance="@android:style/TextAppearance.Material.Title"/>
+    <LinearLayout
+        android:layout_margin="@dimen/padding_large"
+        android:layout_below="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="200dp">
+        <View
+            android:id="@+id/first_animated_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_xlarge"
+            android:layout_marginRight="@dimen/padding_large"
+            android:background="@drawable/clip_vertical" />
+
+        <View
+            android:id="@+id/second_animated_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:background="@drawable/clip_vertical" />
+
+        <View
+            android:id="@+id/third_animated_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:background="@drawable/clip_vertical" />
+        <View
+            android:id="@+id/fourth_animated_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:background="@drawable/clip_vertical" />
+        <View
+            android:id="@+id/fifth_animated_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_xlarge"
+            android:background="@drawable/clip_vertical" />
+
+    </LinearLayout>
+</RelativeLayout>
